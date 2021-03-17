@@ -14,23 +14,49 @@
 </head>
 
 <body>
-
-  <div class="container">
-    <header class="header">
-      <div class="header__logo">
-        <a href="#">
-          КиноПульс
+  <div class="app">
+    <div class="container">
+      <header class="header">
+        <div class="header__logo">
+          <a href="#">
+            КиноПульс
+          </a>
+        </div>
+        <a href="#" class="header__user">
+          <span class="header__username">
+            Al
+          </span>
+          <img src="images/small-owl-avatar.jpg" alt="Аватар сова с кофе" class="header__user-pic">
         </a>
-      </div>
-      <a href="#" class="header__user">
-        <span class="header__username">
-          Al
-        </span>
-        <img src="images/small-owl-avatar.jpg" alt="Аватар сова с кофе" class="header__user-pic">
-      </a>
+    </div>
     </header>
-  </div>
 
+    <main>
+      <div class="container">
+        <section class="film">
+          <img class="film__logo" src="images/film-logo.png" alt="Логотип фильма: Mortal Kombat">
+          <div class="film__tags">
+            <span class="date">2021</span>
+            <span class="genre">боевик, фэнтези, фантастика</span>
+            <span class="country">США</span>
+            <span class="age">18+</span>
+          </div>
+          <p class="film__description">
+            Продолжение легендарного фильма из 90-х.<br> 
+            Предстоит по-настоящему смертельная битва,<br> 
+            где останется только сильнейший
+          </p>
+          <div class="film__buttons">
+            <button class="film__button button-active">Предзаказ фильма</button>
+            <button class="film__button button-default">
+              <img class="button-icon" src="/images/play-icon.svg" alt="Иконка просмотра">
+              <span class="button-text">Смотреть трейлер</span>
+            </button>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
   <script src="js/main.js"></script>
 </body>
 

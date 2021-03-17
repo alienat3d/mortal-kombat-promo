@@ -3,8 +3,7 @@
 }
 
 body {
-  background: #010202 url('../images/cover-image.jpg') no-repeat center right;
-  background-size: contain;
+  background-color: #010202;
   color: #fff;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
@@ -15,6 +14,13 @@ body {
 a {
   color: #fff;
   text-decoration: none;
+}
+
+.app {
+  background: linear-gradient(90deg, #010202 -2.88%, rgba(1, 2, 2, 0.2) 44.9%),
+    url("../images/cover-image.jpg") no-repeat top right;
+  min-height: 100vh;
+  min-width: 100%;
 }
 
 .container {
@@ -52,4 +58,77 @@ a {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+}
+
+.film {
+  width: 460px;
+}
+
+.film__tags {
+  color: rgba(229, 229, 229, 0.4);
+  display: flex;
+  align-items: flex-start;
+}
+
+.film__tags>* {
+  margin-right: 15px;
+}
+
+.film__logo {
+  width: 405px;
+  height: 90px;
+  margin-bottom: 18px;
+}
+
+.film__tags {
+  line-height: 22.4px;
+}
+
+.age {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  line-height: 19.6px;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 2px;
+  padding: 1px 5px;
+}
+
+.film__description {
+  font-size: 21px;
+  line-height: 29.4px;
+  margin-bottom: 36px;
+}
+
+.button-active {
+  margin-right: 15px;
+  width: 183px;
+  height: 44px;
+  border-radius: 6px;
+  font-size: 16px;
+  line-height: 140%;
+  color: #fff;
+  background-color: #EA6E20;
+  cursor: pointer;
+}
+
+.button-default {
+  width: 203px;
+  height: 44px;
+  font-size: 16px;
+  line-height: 140%;
+  color: #fff;
+  background-color: #2F2F2F;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.button-icon {
+  width: 12px;
+  height: 13.3px;
+}
+
+.button-text {
+  margin-left: 10px;
+  vertical-align: text-bottom;
 }
