@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #010202 url('../images/cover-image.jpg') no-repeat center right;
+  background-size: contain;
+  color: #fff;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20.1px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1176px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  margin: 56px 147px 201px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  line-height: 28.1px;
+  text-transform: capitalize;
+}
+
+.header__user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header__username {
+  margin-right: 15px;
+}
+
+.header__user-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
