@@ -1,0 +1,139 @@
+@import "variables"; //переменные
+@import "global"; //глобальные стили
+@import "reset"; //сброс стандартных стилей браузера
+// === / @IMPORTS ===
+
+// === HEADER ===
+.header {
+  margin: 56px auto 201px;
+  min-width: 1176px;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    line-height: 28px;
+    text-transform: capitalize;
+  }
+
+  &__user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__username {
+    margin-right: 15px;
+  }
+
+  &__user-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+}
+// === / HEADER ===
+
+.film {
+  width: 460px;
+  // .film__tags
+  &__tags {
+    color: rgba(229, 229, 229, 0.4);
+    display: flex;
+    align-items: flex-start;
+  }
+  // .film__tags > *
+  &__tags > * {
+    margin-right: 15px;
+  }
+  // .film__logo
+  &__logo {
+    width: 405px;
+    height: 90px;
+    margin-bottom: 18px;
+  }
+  // .film__tags
+  &__tags {
+    line-height: 22px;
+  }
+  // .film__description
+  &__description {
+    font-size: 21px;
+    line-height: 29px;
+    margin-bottom: 36px;
+  }
+}
+
+.age {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  line-height: 20px;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 2px;
+  padding: 1px 5px;
+}
+
+.button-active {
+  margin-right: 15px;
+  width: 183px;
+  height: 44px;
+  border-radius: 6px;
+  font-size: 16px;
+  line-height: 140%;
+  color: #fff;
+  background-color: #ea6e20;
+  cursor: pointer;
+}
+
+.button-default {
+  width: 203px;
+  height: 44px;
+  font-size: 16px;
+  line-height: 140%;
+  color: #fff;
+  background-color: #2f2f2f;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.button-icon {
+  vertical-align: initial;
+  width: 12px;
+  height: 13px;
+}
+
+.button-text {
+  margin-left: 10px;
+  vertical-align: text-bottom;
+}
+// === FOOTER ===
+.footer {
+  margin: 30px auto;
+}
+
+.footer-copyright {
+  max-width: 150px;
+  text-align: center;
+}
+
+.footer-copyright-title {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.footer-copyright-button {
+  margin-right: 0;
+  transition: all .3s;
+}
+
+.footer-copyright-button:hover,
+.footer-copyright-button:focus {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+// === / FOOTER ===

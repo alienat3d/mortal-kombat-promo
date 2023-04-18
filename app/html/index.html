@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mortal Kombat — премьера фильма!</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&family=Source+Sans+Pro&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <!-- === HEADER === -->
+      @@include('blocks/header.html')
+      <!-- === / HEADER === -->
+    </div>
+
+    <main class="main">
+      <div class="container">
+        <section class="film">
+          <h1 class="visually-hidden">Описание фильма «Mortal Kombat»</h1>
+          <img class="film__logo" src="img/film-logo.png" alt="Логотип фильма «Mortal Kombat»">
+          <div class="film__tags">
+            <span class="date">2021</span>
+            <span class="genre">боевик, фэнтези, фантастика</span>
+            <span class="country">США</span>
+            <span class="age">18+</span>
+          </div>
+          <p class="film__description">
+            Продолжение легендарного фильма из 90-х.<br>
+            Предстоит по-настоящему смертельная битва,<br>
+            где останется только сильнейший
+          </p>
+          <div class="film__buttons">
+            <button class="film__button button-active">Предзаказ фильма</button>
+            <button class="film__button button-default">
+              <img class="button-icon" src="img/icons/play-icon.svg" alt="Иконка просмотра">
+              <span class="button-text">Смотреть трейлер</span>
+            </button>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- === FOOTER === -->
+    @@include('blocks/footer.html')
+    <!-- === / FOOTER === -->
+  </div>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
